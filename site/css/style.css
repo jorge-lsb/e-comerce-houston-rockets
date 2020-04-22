@@ -3,7 +3,6 @@ body{
     border: 0;
     padding: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: rgb(185, 185, 189);;
   }
   
   .container {
@@ -11,17 +10,23 @@ body{
     margin: 0 auto;
     height: 100%;
   }
-  
+
   .header {
-    background-color: #000000;
+    background-color: rgba(14, 73, 157, 0.48);
     width: 100%;
     height: 100px;
-    border-bottom: rgb(0, 89, 255) 5px solid;  
-  
   }
-  
-  .header span{
-    color: rgb(0, 89, 255);
+
+  .header img{
+    width: 38px;
+    float: left;
+    margin-left: 17px;
+    margin-top: 3px;
+  }
+
+  .nav {
+    float: right;
+    text-transform: uppercase;
   }
   
   .nav ul li {
@@ -34,10 +39,7 @@ body{
     color: white;
   }
   
-  .nav {
-    float: right;
-    text-transform: uppercase;
-  }
+
   
   .nav .ativo{
     color: rgb(0, 89, 255);
@@ -73,56 +75,3 @@ body{
     font-size: 20px;
   }
   
-  /*Parte do css para pagina Sobre*/
-  
-  
-  .assunto{
-    text-align: center;
-    margin-left: 300px;
-    margin-top: 20px;
-    height: 400px;
-    width: 350px;
-    color: white;
-    background-color: #323232;
-    border-bottom: orangered 5px solid;
-    float: left;
-    border-radius: 15px 15px 0px 0px;
-  }
-  .assunto p {
-    text-align: left;
-    padding: 15px;
-  }
-  
-  .assunto2{
-    text-align: center;
-    margin-right: 300px;
-    margin-top: 20px;
-    height: 400px;
-    width: 350px;
-    color: white;
-    background-color: #323232;
-    border-bottom: orangered 5px solid;
-    float: right;
-    border-radius: 15px 15px 0px 0px;
-  }
-  
-  .assunto2 p {
-    text-align: left;
-    padding: 15px;
-  }
-  
-  .assunto2 img{
-    height: 200px;
-    float: left;
-  }
-  
-  .rodape{
-    text-align: center;
-    color: white;
-    background-color: #323232;
-    float: left;
-    margin-top: 50px;
-    border-top: orangered 5px solid;
-    width: 100%;
-    height: 40px;
-  }

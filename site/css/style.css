@@ -11,19 +11,26 @@ body{
     height: 100%;
   }
 
-  .header {
-    background-color: rgba(14, 73, 157, 0.48);
-    width: 100%;
-    height: 100px;
-  }
-
-  .header img{
-    width: 38px;
-    float: left;
-    margin-left: 17px;
+  .container img{
+    width: 120px;
+    margin-left: 405px;
     margin-top: 3px;
   }
+  
+  .header {
+    width: 100%;
+    height: 100px;
+    background: rgb(255,0,0);
+    background: radial-gradient(circle, rgba(255,0,0,1) 0%, rgba(219,15,15,1) 22%, rgba(255,76,0,1) 50%, rgba(255,38,0,1) 75%, rgba(255,0,0,1) 100%);
+  }
 
+  /* .header img {
+    align-content: center;
+    width: 120px;
+     float: left; 
+    margin-left: 639px;
+    margin-top: 3px;
+} */
   .nav {
     float: right;
     text-transform: uppercase;
@@ -32,6 +39,11 @@ body{
   .nav ul li {
     display: inline-block;
     margin-left: 20px;
+    color: white;
+    font-weight: bold;
+  }
+  .nav ul :hover{
+    color: black;
   }
   
   .nav a {
@@ -39,15 +51,13 @@ body{
     color: white;
   }
   
-
-  
   .nav .ativo{
     color: rgb(0, 89, 255);
   
   }
   
   .nav ul {
-    margin: 0 auto;
+    margin: 18px auto;
     padding: 22px;
   }
   
@@ -60,9 +70,15 @@ body{
   
   .showcase{
     text-align: center;
-    background-image: url(team.png);
+    background-image: url("../img/toyota-center-dentro-wallpaper.jpg");
     min-height: 400px;
     color: white;
+  }
+
+  /* .tranparencia{
+
+  }
+     */
   }
   
   .showcase h1{
@@ -72,6 +88,8 @@ body{
   }
   
   .showcase p {
+    padding-top: 150px;
     font-size: 20px;
+    margin: 0px;
   }
   

@@ -11,7 +11,7 @@ body{
     height: 100%;
   }
 
-  .container img{
+  .header img{
     width: 120px;
     margin-left: 405px;
     margin-top: 3px;
@@ -70,17 +70,28 @@ body{
   
   .showcase{
     text-align: center;
-    background-image: url("../img/toyota-center-dentro-wallpaper.jpg");
+    background-image: url("../img/toyota-center-dentro-wallpaper2.jpg") ;
     min-height: 400px;
+    width: 100%;
     color: white;
   }
-
-  /* .tranparencia{
+  .fundo-transparente{
+    background-color: rgba(0,0,0,0.7);
+    min-height: 400px;
 
   }
-     */
+
+  /* .gif_harden{
+    float: left;
+    margin: 0px;
+  } */
+
+ .img_harden{
+    float: right;
+    margin: 116px 0px 150px 15px;
+    width: 150px;
   }
-  
+
   .showcase h1{
     margin: 0;
     padding-top: 80px;
@@ -91,5 +102,10 @@ body{
     padding-top: 150px;
     font-size: 20px;
     margin: 0px;
+    float: left;
+    width: 700px;
   }
   
+  .showcase span{
+    color: rgba(255,0,0,1);
+  }

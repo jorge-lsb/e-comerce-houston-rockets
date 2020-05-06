@@ -17,7 +17,7 @@ body{
     margin-top: 3px;
   }
   
-  .header {
+  .header { 
     width: 100%;
     height: 100px;
     background: rgb(255,0,0);
@@ -67,17 +67,46 @@ body{
     margin: auto;
     padding: 12px;
   }
+
+  .historia{
+    background-color:rgb(189, 190, 192);
+    width: 100%;
+    height: 85vh;
+  }
   
+  .historia img{
+    height: 400px;
+    margin-left: 0px;
+    margin-top: 62px;
+    float: left;
+  }
+
+  .conteudo{
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.93214);
+    float: left;
+    color: white;
+    width: 600px;
+    padding: 30px;
+    margin-top:56px;
+    margin-left: 50px;
+    border-bottom: 10px rgb(191, 32, 47) solid;
+  }
+
+  .conteudo p{
+    text-align: justify;
+  }
+
   .showcase{
     text-align: center;
     background-image: url("../img/toyota-center-dentro-wallpaper2.jpg") ;
-    min-height: 400px;
+    min-height: 67vh;
     width: 100%;
     color: white;
   }
   .fundo-transparente{
     background-color: rgba(0,0,0,0.7);
-    min-height: 400px;
+    min-height: 67vh;
 
   }
 
@@ -109,3 +138,9 @@ body{
   .showcase span{
     color: rgba(255,0,0,1);
   }
+
+  .novidades {
+    width: 100%;
+    height: 100px;
+    background: rgb(38,38,38);
+}

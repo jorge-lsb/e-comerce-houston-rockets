@@ -145,3 +145,47 @@ body{
     height: 100px;
     background: rgb(38,38,38);
 }
+
+.time{
+  width: 100%;
+  float: left;
+  margin-top: -22px;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,0,0,1) 50%, rgba(0,0,0,1) 100%);
+}
+
+.time h1{
+  padding: 30px;
+  text-align: center;
+  color: #000;
+  
+}
+
+.card{
+  float: left;
+  margin: 80px 0 20px 39px;
+  text-align: center;
+  width: 400px;
+  height: 250px;
+  background-color: #000;
+  border-radius:  0 30px;
+  border-bottom: 10px rgb(191, 32, 47) solid;
+  border-right: 10px rgb(191, 32, 47) solid;
+  /* Transformando elementos da pagia em figuras com curvas */
+}
+
+.card h2{
+  text-align: center;
+  color: #fff; 
+}
+.card p{
+  text-align: center;
+  color: #fff; 
+}
+
+.card .foto{
+  width: 260px;
+  height: 190px;
+  margin-top: -80px;  
+  /* Deixando a imagem 40px fora do div card */
+}
+

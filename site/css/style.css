@@ -24,14 +24,6 @@ body{
     background: rgb(191, 32, 47);
 
   }
-
-  /* .header img {
-    align-content: center;
-    width: 120px;
-     float: left; 
-    margin-left: 639px;
-    margin-top: 3px;
-} */
   .nav {
     float: right;
     text-transform: uppercase;
@@ -193,13 +185,20 @@ footer{
   float: left;
   width: 100%;
   height: 200px;
-  
   color: white;
+}
+
+footer img{
+  width: 100px;
+  height: 100px;
+  float: left;
 }
 
 .conteudo_rodape{
   padding: 25px;
-  background-color: black;
+  text-shadow: rgb(0, 0, 0) 10px 0 10px;
+  background-color: #bdbec0;
+  text-align: center;
 }
 
 .conteudo_rodape  a{

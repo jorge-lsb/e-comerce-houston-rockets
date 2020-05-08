@@ -189,30 +189,21 @@ body{
   /* Deixando a imagem 40px fora do div card */
 }
 
-.sobre_texas{
+footer{
   float: left;
   width: 100%;
-  height: 85vh;
-  background-color: black;
+  height: 200px;
+  
   color: white;
 }
 
-.showcase_texas{
-  background-image: url("../img/estado-texas-wallpaper.jpg");
-  height: 100vh;
-  background-size: cover;
-}
-.showcase_texas p {
-  margin: 0px;
+.conteudo_rodape{
+  padding: 25px;
+  background-color: black;
 }
 
-.fundotransparente_texas{
-  width: 1000px;
-  height: 500px;
-  background-color: rgba(0,0,0,0.7);
-  border-radius: 10px;
-  float: left;
-  margin-left: 200px;
-  margin-top: 50px;
-  padding: 25px;
+.conteudo_rodape  a{
+  color: white;
+  list-style: none;
+  margin-left: 15px;
 }

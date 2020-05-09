@@ -1,4 +1,4 @@
-var menu_itens = document.querySelectorAll('.nav a');
+var menu_itens = document.querySelectorAll('#id_scroll_suave');
 menu_itens.forEach(item => {
     item.addEventListener('click', scrollToId);
 });

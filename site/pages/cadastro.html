@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -11,22 +11,27 @@
 </head>
 
 <body>
+    
+    <!-- FUNDO DO SITE -->
     <div class="background_cadastro">
-
+        <!-- OPACIDADE DO FUNDO -->
         <div class="fundo-transparente">
-
+            <!-- FORMULARIO -->
             <div class="formulario_cadastro">
 
                 <form action="./loja.html">
 
                     <img src="../img/logo-houston rockets-p-branca.png" alt="">
-
+                    <!-- CABEÇALHO DO CADASTRO -->
                     <div class="cabecalho_form">
 
                         <h4>Ainda não é cadastrado no site?</h4>
                         <p>Faça agora mesmo o seu cadastro, é simples e rápido!</p>
 
                     </div>
+                    <!-- FIM DO CABEÇALHO -->
+
+                    <!-- CONTEUDO DO FORMULARIO -->
                     <div class="conteudo_form">
 
                         <p>Todos os campos são de preenchimento obrigatório.</p>
@@ -46,11 +51,15 @@
 
                             Crie sua senha <span>Confirme sua senha</span>
                             <br>
-                            <input id="senha" type="password"> <i class="fa fa-eye" aria-hidden="true"></i>
-                            <i style="display: none;" class="fa fa-eye-slash" aria-hidden="true"></i>
-                            <input id="senha" type="password"><i class="fa fa-eye" aria-hidden="true"></i>
-                            <i style="display: none;" class="fa fa-eye-slash" aria-hidden="true"></i>
 
+                            <input id="ipt_senha_1" type="password">
+                            <i onclick="ver_senha_1()" id="senha_fechada_1" class="fa fa-eye" aria-hidden="true"></i>
+                            <i onclick="esconder_senha_1()" id="senha_aberta_1" style="font-size: 0pt;" class="fa fa-eye-slash" aria-hidden="true"></i>
+
+                            <input id="ipt_senha_2" type="password">
+                            <i onclick="ver_senha_2()" id="senha_fechada_2" class="fa fa-eye" aria-hidden="true"></i>
+                            <i onclick="esconder_senha_2()" id="senha_aberta_2" style="font-size: 0pt;" class="fa fa-eye-slash" aria-hidden="true"></i>
+           
                         </label>
 
                         <br>
@@ -76,15 +85,17 @@
                         <button><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Cadastrar</button>
 
                     </div>
-
+                    <!-- FIM DO CONTEUDO -->
                 </form>
-
+                
             </div>
-
+           <!-- FIM DO FORMULARIO -->
         </div>
-
+        <!-- FIM OPACIDADE DO FUNDO -->
     </div>
-
+    <!-- FIM DO FUNDO -->
 </body>
 
 </html>
+
+<script src="../js/mostrar_senha.js"></script>

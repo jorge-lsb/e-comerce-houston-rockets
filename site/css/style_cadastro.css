@@ -78,10 +78,10 @@ body{
     font-size: 12pt;
 }
 .conteudo_form span{
-    margin-left: 133px;
+    margin-left: 124px;
 }
-.conteudo_form   #senha{
-        width: 44%;
+.conteudo_form   #ipt_senha_1, #ipt_senha_2{
+        width: 200px;
 }
 .conteudo_form .prefixo{
     width: 30%;

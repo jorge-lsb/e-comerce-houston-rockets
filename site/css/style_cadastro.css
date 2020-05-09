@@ -29,13 +29,23 @@ body{
 }
   .formulario_cadastro{
       width: 500px;
-      height: 430px;
+      height: 500px;
       background-color: rgba(189,190,192,0.8321);;
       float: left;
       border-radius: 15px;
       margin-top: 64px;
       margin-left: 410px;
     
+  }
+  .formulario_cadastro button{
+    width: 200px;
+    height: 25px;
+    color: rgb(211, 30, 48);
+    background-color: grey;
+    text-shadow: rgb(0, 0, 0) 10px 0 10px;
+    border: 0px;
+    margin-top: 35px;
+    margin-left: 163px;
   }
   .cabecalho_form{
       background-color: rgb(211, 30, 48);
@@ -78,10 +88,10 @@ body{
     font-size: 12pt;
 }
 .conteudo_form span{
-    margin-left: 124px;
+    margin-left: 130px;
 }
 .conteudo_form   #ipt_senha_1, #ipt_senha_2{
-        width: 200px;
+        width: 43%;
 }
 .conteudo_form .prefixo{
     width: 30%;

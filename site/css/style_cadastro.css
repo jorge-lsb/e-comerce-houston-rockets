@@ -90,8 +90,11 @@ body{
 .conteudo_form span{
     margin-left: 130px;
 }
+.conteudo_form .password_config{
+    margin: 0px;
+}
 .conteudo_form   #ipt_senha_1, #ipt_senha_2{
-        width: 43%;
+        width: 40%;
 }
 .conteudo_form .prefixo{
     width: 30%;

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/4b59cf2ce9.js" crossorigin="anonymous"></script>
     <script src="../js/validacao_cadastro.js"></script>
+    <script src="../js/mostrar_senha.js"></script>
 </head>
 
 <body>
@@ -55,14 +56,21 @@
                             <br>
 
                             <input id="ipt_senha_1" type="password" required>
-                            <span class="password_config" id="show_password_1"><i onclick="ver_senha_1()" id="senha_fechada_1" class="fa fa-eye" aria-hidden="true"></i></span>
-                            <span class="password_config" id="hide_password_1"><i onclick="esconder_senha_1()" id="senha_aberta_1" style="font-size: 0pt;"class="fa fa-eye-slash" aria-hidden="true"></i></span>
-                            
-                            
+
+                            <span class="password_config" id="show_password1">
+
+                                <i onclick="mostrar1()" class="fa fa-eye-slash" aria-hidden="true"></i>
+
+                            </span>
+
 
                             <input id="ipt_senha_2" type="password" required>
-                            <i onclick="ver_senha_2()" id="senha_fechada_2" class="fa fa-eye" aria-hidden="true"></i>
-                            <i onclick="esconder_senha_2()" id="senha_aberta_2" style="font-size: 0pt;"class="fa fa-eye-slash" aria-hidden="true"></i>
+
+                            <span class="password_config" id="show_password2">
+
+                                <i onclick="mostrar2()" class="fa fa-eye-slash" aria-hidden="true"></i>
+
+                            </span>
 
                         </label>
 
@@ -106,5 +114,3 @@
 </body>
 
 </html>
-
-<script src="../js/mostrar_senha.js"></script>

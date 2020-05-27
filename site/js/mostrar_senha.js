@@ -1,23 +1,33 @@
-function ver_senha_1() {
-    senha_fechada_1.style.fontSize = '0pt';
-    senha_aberta_1.style.fontSize = '12pt';
-    ipt_senha_1.type = 'text';
+var olho_aberto1 = '<i onclick="esconder1()" class="fa fa-eye" aria-hidden="true"></i>';
+var olho_fechado1 = '<i onclick="mostrar1()"  class="fa fa-eye-slash" aria-hidden="true"></i>';
+
+var olho_aberto2 = '<i onclick="esconder2()" class="fa fa-eye" aria-hidden="true"></i>';
+var olho_fechado2 = '<i onclick="mostrar2()"  class="fa fa-eye-slash" aria-hidden="true"></i>';
+
+function mostrar1(){
+
+    document.getElementById("ipt_senha_1").type = 'text';
+    document.getElementById("show_password1").innerHTML = olho_aberto1;
+
 }
 
-function esconder_senha_1() {
-    senha_fechada_1.style.fontSize = '12pt';
-    senha_aberta_1.style.fontSize = '0pt';
-    ipt_senha_1.type = 'password';
+function esconder1(){
+
+    document.getElementById("ipt_senha_1").type = 'password';
+    document.getElementById("show_password1").innerHTML = olho_fechado1;
+
 }
 
-function ver_senha_2() {
-    senha_fechada_2.style.fontSize = '0pt';
-    senha_aberta_2.style.fontSize = '12pt';
-    ipt_senha_2.type = 'text';
+function mostrar2(){
+
+    document.getElementById("ipt_senha_2").type = 'text';
+    document.getElementById("show_password2").innerHTML = olho_aberto2;
+
 }
 
-function esconder_senha_2() {
-    senha_fechada_2.style.fontSize = '12pt';
-    senha_aberta_2.style.fontSize = '0pt';
-    ipt_senha_2.type = 'password';
+function esconder2(){
+
+    document.getElementById("ipt_senha_2").type = 'password';
+    document.getElementById("show_password2").innerHTML = olho_fechado2;
+
 }

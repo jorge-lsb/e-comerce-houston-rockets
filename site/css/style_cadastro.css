@@ -96,6 +96,15 @@ body{
 .conteudo_form   #ipt_senha_1, #ipt_senha_2{
         width: 40%;
 }
+
+.fa-eye-slash{
+    font-size: 10px;
+    margin: 0;
+}
+.fa-eye{
+ font-size: 10px;
+ margin: 0;
+}
 .conteudo_form .prefixo{
     width: 30%;
 }

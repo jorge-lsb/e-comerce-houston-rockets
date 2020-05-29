@@ -9,8 +9,6 @@
     <link rel="shortcut icon" href="../img/houston-rockets-logo-p-vermelha.png" type="image/x-icon">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/4b59cf2ce9.js" crossorigin="anonymous"></script>
-    <script src="../js/validacao_cadastro.js"></script>
-    <script src="../js/mostrar_senha.js"></script>
 </head>
 
 <body>
@@ -44,7 +42,7 @@
 
                             E-mail
                             <br>
-                            <input type="email" required>
+                            <input type="text" required id="email">
 
                         </label>
 
@@ -94,7 +92,7 @@
 
                         <br>
 
-                        <button type="submit" onclick="validating_form()"><i class="fa fa-long-arrow-right"
+                        <button id="btn_register" type="submit" onclick="validating_form()"><i class="fa fa-long-arrow-right"
                                 aria-hidden="true"></i>Cadastrar</button>
 
                     </div>
@@ -114,3 +112,6 @@
 </body>
 
 </html>
+<script src="../js/validacao_cadastro.js"></script>
+<script src="../js/mostrar_senha.js"></script>
+<script src="../js/reload_form.js"></script>

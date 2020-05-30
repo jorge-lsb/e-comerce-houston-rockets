@@ -85,8 +85,8 @@
 
                             Cep
                             <br>
-                            <input class="prefixo" type="text" required>-
-                            <input class="sufixo" type="text" required>
+                            <input id="id_prefix" onkeyup="textingprefix()" class="prefixo" type="text" required>-
+                            <input id="id_sufix" onkeyup="textingprefix()" class="sufixo" type="text" required>
 
                         </label>
 
@@ -111,6 +111,7 @@
 </body>
 
 </html>
+<script src="../js/input_sufixo.js"></script>
 <script src="../js/mask_cpf.js"></script>
 <script src="../js/validacao_cadastro.js"></script>
 <script src="../js/mostrar_senha.js"></script>

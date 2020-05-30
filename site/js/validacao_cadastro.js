@@ -1,4 +1,15 @@
 function validating_form() {
+    // VALIDADANDO E-MAIL
+
+    var email_validating = document.getElementById("email").value;
+    var validated_email_successfully = (email_validating.indexOf('@') > -1 && email_validating.indexOf('.') && email_validating.length > 2);
+
+    if (!validated_email_successfully) {
+        console.log('SEU E-MAIL NÃO É VALIDO');
+        alert('SEU EMAIL NÃO É VALIDO');
+        document.getElementById("registration_form").action = "";
+    }
+    
     // VALIDADANDO SENHA
 
     var passoword = document.getElementById("ipt_senha_1").value;
@@ -12,14 +23,5 @@ function validating_form() {
         document.getElementById("registration_form").action = "../pages/loja.html";
     }
 
-    // VALIDADANDO E-MAIL
 
-    var email_validating = document.getElementById("email").value;
-    var validated_email_successfully = (email_validating.indexOf('@') > -1 && email_validating.indexOf('.') && email_validating.length > 2);
-
-    if (!validated_email_successfully) {
-        console.log('SEU E-MAIL NÃO É VALIDO');
-        alert('SEU EMAIL NÃO É VALIDO');
-        document.getElementById("registration_form").action = "";
-    }
 }

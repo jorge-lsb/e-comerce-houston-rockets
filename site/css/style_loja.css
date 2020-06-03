@@ -23,7 +23,12 @@ body{
     outline: none;
     font-size: 18px;
     padding-left: 15px;
+    transition: 0.5s;
   }
+
+    .pesquisa_loja:hover{
+      font-size: 20px;
+    }
 
   .btn_pesquisa_loja{
     float: left;
@@ -34,15 +39,18 @@ body{
     border-radius: 0px 3px 3px 0px;
     background-color: grey;
     outline: none;
+   
   }
 
   .btn_pesquisa_loja .fas{
     color: white;
     font-size: 20px;
+    transition: 0.5s;
   }
 
   .btn_pesquisa_loja .fas:hover{
     color: black;
+    font-size: 22px;
   }
 
   .header img{

@@ -78,7 +78,7 @@
 
                             CPF/CNPJ
                             <br>
-                            <input onkeyup="texting()" id="cpf" type="text" required></label>
+                            <input onkeyup="texting()" id="cpf" type="text"name="cpf" maxlength="11" onblur="return verificarCPF(this.value)" required></label>
                         <br>
 
                         <label>
@@ -111,9 +111,5 @@
 </body>
 
 </html>
-<script src="../js/input_sufixo.js"></script>
-<script src="../js/mask_cpf.js"></script>
 <script src="../js/validacao_cadastro.js"></script>
-<script src="../js/mostrar_senha.js"></script>
-<script src="../js/reload_form.js"></script>
-<!-- <script src="../js/connect.js"></script> -->
+<script src="../js/cpf.js"></script>

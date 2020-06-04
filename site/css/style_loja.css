@@ -39,7 +39,11 @@ body{
     border-radius: 0px 3px 3px 0px;
     background-color: grey;
     outline: none;
-   
+    transition: 0.5s;
+  }
+
+  .btn_pesquisa_loja:hover{
+    background-color: #5a5a5a;
   }
 
   .btn_pesquisa_loja .fas{
@@ -101,6 +105,65 @@ body{
     margin: 18px auto;
   }
 
+  .header-nav-bar{
+    float: left;
+    width: 100%;
+    height: 30px;
+    background-color: #de1326;
+  }
+  .navegation-bar{
+    float: left;
+    margin-left: 25px;
+    height: 100%;
+    
+  }
+  .navegation-bar ul li{
+    display: inline-block;
+    transition: 0.3s;
+  }
+  .navegation-bar ul li:hover{
+    background-color:grey ;
+  }
+  .navegation-bar ul{
+    margin: 0;
+    padding: 0;
+  }
+
+  .navegation-bar a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: white;
+    display: block;
+    padding: 5px;
+  }
+
+  .shop-cart{
+    float: right;
+    background-color: grey;
+    color: white;
+    margin-right: 25px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .shop-cart span{
+    margin: 0;
+  }
+
+  .shop-cart i{
+    font-size: 15px;
+    margin-right: 5px;
+  }
+  .title-car{
+    font-size: 11px;
+  }
+
+  .center-itens{
+    padding: 7px;
+  }
 
 footer{
   float: left;

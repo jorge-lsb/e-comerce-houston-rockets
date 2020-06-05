@@ -27,13 +27,14 @@
         <div class="nav">
             <ul>
                 <i class="fas fa-user"></i>
-                <li><a href="site/pages/login.html">Entrar</a></li>
+                <li><a href="./login.html">Sair</a></li>
             </ul>
         </div>
 
     </div>
 
     <!-- FIM CABEÇALHO -->
+    <!-- BARRA DE NAVEGAÇÃO -->
     <div class="header-nav-bar">
         <div class="navegation-bar">
             <ul>
@@ -51,10 +52,91 @@
                 <i class="fas fa-cart-arrow-down"></i>
                 <span class="shop-cart">(<b id="number-shop-add">0</b>)</span>
             </div>
-
-
         </div>
     </div>
+    <!-- FIM BARRA DE NAVEGAÇÃO  -->
+
+    <!-- CONTEUDO DO LOJA -->
+    <div class="body-shop">
+
+        <!-- CONTEUDO INTERNO DA LOJA -->
+        <div class="main">
+
+            <p>Home/Houston Rockets</p>
+
+            <div class="result_search">
+
+                <h1>
+                    <i>Resultados de Busca para "<span id="id_buscar">Houston Rockets</span>"</i>
+                </h1>
+
+                <p>Exibindo 1 - 11 de 11 resultados</p>
+            </div>
+
+
+
+
+            <div class="side_bar">
+
+                <div id="card1" class="card_nav">
+
+                    <p>Tipo de Produto <span id="id_pro1"><i onclick="ver_menos()" class="fas fa-angle-left"></i></span>
+                    </p>
+
+                    <label for="chk_box1">
+                        <input type="checkbox" name="cheking" id="chk_box1"> Bonés
+                    </label>
+                    <label for="chk_box2">
+                        <input type="checkbox" name="cheking" id="chk_box2"> Camisetas
+                    </label>
+                    <label for="chk_box3">
+                        <input type="checkbox" name="cheking" id="chk_box3"> Bermudas
+                    </label>
+
+
+                </div>
+
+                <div id="card2" class="card_nav">
+
+                    <p>Genêro <span id="id_pro2"><i onclick="ver_menos2()" class="fas fa-angle-left"></i></span></p>
+
+                    <label for="chk_box4">
+                        <input type="checkbox" name="cheking" id="chk_box4"> Masculino
+                    </label>
+                    <label for="chk_box5">
+                        <input type="checkbox" name="cheking" id="chk_box5"> Feminino
+                    </label>
+
+                </div>
+
+                <div id="card3" class="card_nav">
+
+                    <p>Preço <span id="id_pro3"><i onclick="ver_menos3()" class="fas fa-angle-left"></i></span></p>
+
+                    <label for="chk_box6">
+                        <input type="radio" name="cheking" id="chk_box6"> 500-1000
+                    </label>
+                    <label for="chk_box7">
+                        <input type="radio" name="cheking" id="chk_box7"> 100-499
+                    </label>
+
+                </div>
+
+            </div>
+
+            <div class="div_ordenar">
+                <span class="ordernar">Ordenar por
+                    <select name="selects" id="organization_by_select">
+                        <option value="">Maior Preço</option>
+                        <option value="">Menor Preço</option>
+                    </select>
+                </span>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- FIM CONTEUDO DO LOJA -->
 
     <!-- RODAPÉ -->
     <footer>
@@ -90,3 +172,4 @@
 </body>
 
 </html>
+<script src="../js/func_loja.js"></script>

@@ -21,7 +21,9 @@ function validating_form() {
         document.getElementById("registration_form").action = "";
     }
 
-
+    if(validated_email_successfully && confirmed){
+        document.getElementById("registration_form").action = "./loja.html";
+    }
 
 }
 

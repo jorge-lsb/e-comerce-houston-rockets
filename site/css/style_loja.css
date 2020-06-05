@@ -190,3 +190,104 @@ footer img{
   list-style: none;
   margin-left: 15px;
 }
+
+.body-shop{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  float: left;
+  width: 100%;
+  height: auto;
+}
+
+.main p{
+  margin-left: 10px;
+  font-size: 10px;
+}
+
+
+.side_bar{
+background-color: #d2d2d2;
+width: 260px;
+height: auto  ;
+padding: 3px;
+border-radius: 3px;
+margin-left: 10px;
+float: left;
+
+}
+.card_nav{
+  background-color: white;
+  border-radius: 3px;
+  margin: 8px;
+  padding: 10px;
+  height: 190px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.card_nav p{
+  font-size: 18px;
+  margin: 10px 5px;
+  border: 0;
+  padding: 0;
+}
+
+.card_nav label{
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.card_nav input{
+  height: 18px;
+  width: 18px;
+}
+
+.card_nav span{
+  float: right;
+}
+
+.main{
+  float: left;
+  width: 100%;
+}
+
+/* .main h1{
+  float: right;
+  text-align: left;
+  margin-left: 40px;
+  text-transform: capitalize;
+} */
+
+.result_search{
+  float: right;
+  margin-right: 25%;
+}
+
+.result_search h1{
+  margin: 0;
+
+}
+
+.organizar_select{
+  float: right;
+}
+
+
+.ordernar{
+  float: right;
+}
+
+.div_ordenar{
+  float: right;
+}
+
+.div_ordenar select{
+  height: 39px;
+  width: 180px;
+  font-size: 13px;
+  padding: 10px;
+  outline: none;
+  margin-right: 15px;
+}

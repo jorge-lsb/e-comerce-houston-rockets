@@ -6,7 +6,7 @@ body{
   }
   
   .container {
-    width: 900px;
+    width: 68%;
     margin: 0 auto;
     height: 100%;
     float: left;
@@ -17,7 +17,7 @@ body{
     float: left;
     margin-top: 35px;
     height: 44px;
-    width: 800px;
+    width: 90%;
     border-radius: 3px 0px 0px 3px;
     border: none;
     outline: none;
@@ -33,7 +33,7 @@ body{
   .btn_pesquisa_loja{
     float: left;
     height: 46px;
-    width: 50px;
+    width: 6%;
     margin-top: 35px;
     border: none;
     border-radius: 0px 3px 3px 0px;
@@ -59,7 +59,7 @@ body{
 
   .header img{
     margin-top: 5px;
-    width: 168px;
+    width: 13%;
     float: left;
   }
   
@@ -75,6 +75,7 @@ body{
     margin-right: 50px;
     color: white;
     margin-top: 30px;
+    width: 9%;
   }
 
   .nav .fas{
@@ -208,7 +209,7 @@ footer img{
 
 .side_bar{
 background-color: #d2d2d2;
-width: 260px;
+width: 19%;
 height: auto  ;
 padding: 3px;
 border-radius: 3px;
@@ -261,6 +262,7 @@ float: left;
 } */
 
 .result_search{
+  width: 50%;
   float: right;
   margin-right: 25%;
 }
@@ -290,4 +292,24 @@ float: left;
   padding: 10px;
   outline: none;
   margin-right: 15px;
+}
+
+.products_sell{
+width: 100%;
+height: auto;
+margin-top: 140px;
+}
+.card_products{
+margin-left: 25px;
+width: 24%;
+float: left;
+}
+.products_sell img{
+width: 100%;
+}
+.desc_product{
+
+}
+.price_product{
+
 }

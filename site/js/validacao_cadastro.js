@@ -27,6 +27,38 @@ function validating_form() {
 
 }
 
+function validating_form_login() {
+    // VALIDADANDO E-MAIL
+
+    var email_validating = document.getElementById("email").value;
+    var validated_email_successfully = (email_validating.indexOf('@') > -1 && email_validating.indexOf('.') && email_validating.length >= 7);
+
+    if (!validated_email_successfully) {
+        console.log('SEU E-MAIL NÃO É VALIDO');
+        alert('SEU EMAIL NÃO É VALIDO');
+        document.getElementById("registration_form").action = "";
+    }
+    
+    // VALIDADANDO SENHA
+
+    var passoword = document.getElementById("ipt_senha_1").value;
+    // var confirmed = passoword == passoword_confirm;
+
+    // if (!confirmed) {
+    //     alert("A senhas não conferem!");
+    //     document.getElementById("registration_form").action = "";
+    // }
+
+    // if(validated_email_successfully && confirmed){
+    //     document.getElementById("registration_form").action = "./loja.html";
+    // }
+
+    if(validated_email_successfully){
+        document.getElementById("registration_form").action = "./loja.html";
+    }
+
+}
+
 
 
 var olho_aberto1 = '<i onclick="esconder1()" class="fa fa-eye" aria-hidden="true"></i>';
@@ -60,6 +92,23 @@ function esconder2(){
 
     document.getElementById("ipt_senha_2").type = 'password';
     document.getElementById("show_password2").innerHTML = olho_fechado2;
+
+}
+
+var olho_aberto1a = '<i onclick="esconder1a()" class="fa fa-eye" aria-hidden="true"></i>';
+var olho_fechado1a = '<i onclick="mostrar1a()"  class="fa fa-eye-slash" aria-hidden="true"></i>';
+
+function mostrar1a(){
+
+    document.getElementById("ipt_senha_1").type = 'text';
+    document.getElementById("show_password1").innerHTML = olho_aberto1a;
+
+}
+
+function esconder1a(){
+
+    document.getElementById("ipt_senha_1").type = 'password';
+    document.getElementById("show_password1").innerHTML = olho_fechado1a;
 
 }
 

@@ -62,76 +62,91 @@
         <!-- CONTEUDO INTERNO DA LOJA -->
         <div class="main">
 
-            <p>Home/Houston Rockets</p>
-
-            <div class="result_search">
-
-                <h1>
-                    <i>Resultados de Busca para "<span id="id_buscar">Houston Rockets</span>"</i>
-                </h1>
-
-                <p>Exibindo 1 - 11 de 11 resultados</p>
+            <div class="div_p">
+                <p>Home/Houston Rockets</p>
             </div>
 
+            <div class="parte_superior">
 
 
 
-            <div class="side_bar">
+                <div class="result_search">
 
-                <div id="card1" class="card_nav">
+                    <h1>
+                        <i>Resultados de Busca para "<span id="id_buscar">Houston Rockets</span>"</i>
+                    </h1>
 
-                    <p>Tipo de Produto <span id="id_pro1"><i onclick="ver_menos()" class="fas fa-angle-left"></i></span>
-                    </p>
+                    <p>Exibindo 1 - 11 de 11 resultados</p>
 
-                    <label for="chk_box1">
-                        <input type="checkbox" name="cheking" id="chk_box1"> Bonés
-                    </label>
-                    <label for="chk_box2">
-                        <input type="checkbox" name="cheking" id="chk_box2"> Camisetas
-                    </label>
-                    <label for="chk_box3">
-                        <input type="checkbox" name="cheking" id="chk_box3"> Bermudas
-                    </label>
-
-
+                    <div class="div_ordenar">
+                        <span class="ordernar">Ordenar por
+                            <select name="selects" id="organization_by_select">
+                                <option value="">Maior Preço</option>
+                                <option value="">Menor Preço</option>
+                            </select>
+                        </span>
+                    </div>
                 </div>
 
-                <div id="card2" class="card_nav">
 
-                    <p>Genêro <span id="id_pro2"><i onclick="ver_menos2()" class="fas fa-angle-left"></i></span></p>
 
-                    <label for="chk_box4">
-                        <input type="checkbox" name="cheking" id="chk_box4"> Masculino
-                    </label>
-                    <label for="chk_box5">
-                        <input type="checkbox" name="cheking" id="chk_box5"> Feminino
-                    </label>
-
-                </div>
-
-                <div id="card3" class="card_nav">
-
-                    <p>Preço <span id="id_pro3"><i onclick="ver_menos3()" class="fas fa-angle-left"></i></span></p>
-
-                    <label for="chk_box6">
-                        <input type="radio" name="cheking" id="chk_box6"> 500-1000
-                    </label>
-                    <label for="chk_box7">
-                        <input type="radio" name="cheking" id="chk_box7"> 100-499
-                    </label>
-
-                </div>
 
             </div>
 
-            <div class="div_ordenar">
-                <span class="ordernar">Ordenar por
-                    <select name="selects" id="organization_by_select">
-                        <option value="">Maior Preço</option>
-                        <option value="">Menor Preço</option>
-                    </select>
-                </span>
+            <div class="parte_interna">
+
+                <div class="side_bar">
+
+                    <div id="card1" class="card_nav">
+
+                        <p>Tipo de Produto <span id="id_pro1"><i onclick="ver_menos()"
+                                    class="fas fa-angle-left"></i></span>
+                        </p>
+
+                        <label for="chk_box1">
+                            <input type="checkbox" name="cheking" id="chk_box1"> Bonés
+                        </label>
+                        <label for="chk_box2">
+                            <input type="checkbox" name="cheking" id="chk_box2"> Camisetas
+                        </label>
+                        <label for="chk_box3">
+                            <input type="checkbox" name="cheking" id="chk_box3"> Bermudas
+                        </label>
+
+
+                    </div>
+
+                    <div id="card2" class="card_nav">
+
+                        <p>Tamanho <span id="id_pro2"><i onclick="ver_menos2()" class="fas fa-angle-left"></i></span></p>
+
+                        <label for="chk_box4">
+                            <input type="checkbox" name="cheking" id="chk_box4"> G
+                        </label>
+                        <label for="chk_box5">
+                            <input type="checkbox" name="cheking" id="chk_box5"> GG
+                        </label>
+
+                    </div>
+
+                    <div id="card3" class="card_nav">
+
+                        <p>Preço <span id="id_pro3"><i onclick="ver_menos3()" class="fas fa-angle-left"></i></span></p>
+
+                        <label for="chk_box6">
+                            <input type="radio" name="cheking" id="chk_box6"> 500-1000
+                        </label>
+                        <label for="chk_box7">
+                            <input type="radio" name="cheking" id="chk_box7"> 100-499
+                        </label>
+
+                    </div>
+
+                </div>
+
             </div>
+
+
 
             <div class="products_sell" id="gerador">
 
@@ -147,7 +162,7 @@
                     <p class="desc_product">Regata Nike James Harden</p>
                     <p class="price_product">R$ 499,99</p>
                 </div>
-                
+
                 <div class="card_products">
                     <img src="../img/loja-img/regata-nike-13.jpg" alt="">
                     <p class="desc_product">Regata Nike James Harden</p>

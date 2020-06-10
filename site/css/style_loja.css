@@ -208,13 +208,13 @@ footer img{
 
 
 .side_bar{
-background-color: #d2d2d2;
-width: 19%;
-height: auto  ;
-padding: 3px;
-border-radius: 3px;
-margin-left: 10px;
-float: left;
+  background-color: #d2d2d2;
+  width: 100%;
+  height: auto;
+  padding: 3px;
+  border-radius: 3px;
+  /* margin-left: 10px; */
+  float: left;
 
 }
 .card_nav{
@@ -262,27 +262,63 @@ float: left;
 } */
 
 .result_search{
-  width: 50%;
-  float: right;
-  margin-right: 25%;
+  width: auto;
+  float: left;
+  margin-left: 5%
 }
+  /* margin-right: 25%;
+} */
 
 .result_search h1{
   margin: 0;
+}
 
+.result_search p{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 17%;
 }
 
 .organizar_select{
   float: right;
 }
 
-
 .ordernar{
   float: right;
 }
 
 .div_ordenar{
+  float: left;
+  margin-left: 660px;
+}
+
+.div_p{
+  float: left;
+  height: 80px;
+  width: 100%;
+  
+}
+
+.div_p p{
+  padding: 10px;
+  font-size: 12px;
+  width: 10%;
+  margin: 0;
+  margin-top: 20px;
+}
+.parte_superior{
+  width: 79%;
+  height: auto;
+  margin-bottom: 35px;
   float: right;
+}
+
+.parte_interna{
+  float: left;
+    width: 19%;
+    height: 100%;
+    margin-left: 10px;
 }
 
 .div_ordenar select{
@@ -295,20 +331,27 @@ float: left;
 }
 
 .products_sell{
-width: 100%;
-height: auto;
-margin-top: 140px;
+  float: right;
+  width: 78%;
+  float: right;
+  margin: left;
+  margin-left: 12px;
 }
+/* margin-top: 140px; */
+
 .card_products{
-margin-left: 25px;
-width: 24%;
-float: left;
+  margin-left: 25px;
+  width: 28%;
+  float: left;
+  border: 0.2px solid grey;
+  margin-top: 2px
 }
+
 .products_sell img{
 width: 100%;
 }
 .desc_product{
-
+ 
 }
 .price_product{
 

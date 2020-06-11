@@ -203,7 +203,7 @@ footer img{
 
 .main p{
   margin-left: 10px;
-  font-size: 10px;
+  font-size: 15px;
 }
 
 
@@ -264,7 +264,7 @@ footer img{
 .result_search{
   width: auto;
   float: left;
-  margin-left: 5%
+  margin-left: 5%;
 }
   /* margin-right: 25%;
 } */
@@ -277,7 +277,8 @@ footer img{
   margin: 0;
   padding: 0;
   border: 0;
-  width: 17%;
+  width: 18%;
+  font-size: 10px;
 }
 
 .organizar_select{
@@ -340,19 +341,24 @@ footer img{
 /* margin-top: 140px; */
 
 .card_products{
-  margin-left: 25px;
-  width: 28%;
+  padding: 2px;
+  margin-left: 10px;
+  width: 27%;
   float: left;
   border: 0.2px solid grey;
-  margin-top: 2px
+  margin-top: 2px;
+  transition: 0.5s;
+}
+
+.card_products:hover{
+    background-color: #888888;
+    color: white;
+}
+
+.card_products .price_product:hover{
+  color: rgb(0, 255, 0);
 }
 
 .products_sell img{
 width: 100%;
-}
-.desc_product{
- 
-}
-.price_product{
-
 }

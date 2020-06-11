@@ -215,8 +215,14 @@ footer img{
   border-radius: 3px;
   /* margin-left: 10px; */
   float: left;
-
 }
+
+.side_bar a{
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+
 .card_nav{
   background-color: white;
   border-radius: 3px;

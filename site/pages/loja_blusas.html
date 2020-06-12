@@ -20,8 +20,8 @@
         <!-- FIM LOGO ROCKETS 3D -->
 
         <div class="container">
-            <input class="pesquisa_loja" type="text" placeholder="Buscar por itens do Houston Rockets">
-            <button class="btn_pesquisa_loja"><i class="fas fa-search"></i></button>
+            <input id="barra_de_pesquisa" class="pesquisa_loja" type="text" placeholder="Buscar por itens do Houston Rockets">
+            <a id="buscar" href="."><button onclick="procurar()" class="btn_pesquisa_loja"><i class="fas fa-search"></i></button></a>
         </div>
 
         <div class="nav">
@@ -74,7 +74,7 @@
                 <div class="result_search">
 
                     <h1>
-                        <i>Resultados de Busca para "<span id="id_buscar">Blusas</span>"</i>
+                        <i>Resultados de Busca para "<span id="id_resultado">Blusas</span>"</i>
                     </h1>
 
                     <p>Exibindo 1 - 1 de 1 resultados</p>

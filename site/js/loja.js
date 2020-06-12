@@ -1,4 +1,53 @@
 
+let caminho;
+
+function procurar() {
+
+    let buscador = barra_de_pesquisa.value;
+
+    let camisa_lj = buscador == 'Camisas' || buscador == 'Camisetas' || buscador == 'camisetas' || buscador == 'camisas' || buscador == 'camisa' || buscador == 'Camisa';
+    let regata_lj = buscador == 'Regata' || buscador == 'regata' || buscador == 'regatas' || buscador == 'Regatas' || buscador == 'Regata';
+    let bones_lj = buscador == 'Bones' || buscador == 'Boné' || buscador == 'bone' || buscador == 'boné' || buscador == 'bones' || buscador == 'Bonés' || buscador == 'bonés';
+    let tenis_lj = buscador == 'tenis' || buscador == 'Tenis' || buscador == 'Calçados' || buscador == 'calsados' || buscador == 'Calsados' || buscador == 'tênis' || buscador == 'Tênis';
+    let bermuda_lj = buscador == 'bermudas' || buscador == 'Bermudas' || buscador == 'bermuda' || buscador == 'Bermudas' || buscador == 'Shorts' || buscador == 'shorts' || buscador == 'short' || buscador == 'Short';
+    // let erro_lj = buscador == 'Camisas' || buscador == 'Camisetas' || buscador == 'camisetas' || buscador == 'camisas' || buscador == 'camisa' || buscador == 'Camisa';
+    let blusa_lj = buscador == 'Blusas' || buscador == 'blusas' || buscador == 'Blusa' || buscador == 'blusa' || buscador == 'moletons' || buscador == 'Moletons' || buscador == 'Moletom' || buscador == 'moletom';
+
+    if (camisa_lj) {
+
+        caminho = 'loja_camisas.html'
+
+    } else if (regata_lj) {
+
+        caminho = 'loja_regatas.html'
+
+    } else if (bones_lj) {
+
+        caminho = 'loja_bones.html'
+
+    } else if (tenis_lj) {
+
+        caminho = 'loja_tenis.html'
+
+    } else if (bermuda_lj) {
+
+        caminho = 'loja_bermuda.html'
+
+    } else if (blusa_lj) {
+
+        caminho = 'loja_blusas.html'
+
+    } else {
+
+        caminho = 'loja_false.html'
+
+    }
+
+
+    buscar.href = caminho;
+    
+    id_resultado.value = buscador;
+}
 
 
 // let cards1 = {
@@ -78,11 +127,11 @@
 //     let cartas = `cards${contador}`
 //     gerador.innerHTML +=
 //         `   <div class="card_products" id="mudanca">
-    
+
 //         <img src="${cards2.imagem}" id="img_card">
-    
+
 //         <p class="desc_product" id="p_desc_product">${cards1.description}</p>
-    
+
 //         <p class="price_product" id="p_price">${cards1.price}</p>
 
 //     </div>  `;

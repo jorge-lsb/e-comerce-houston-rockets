@@ -368,3 +368,8 @@ footer img{
 .products_sell img{
 width: 100%;
 }
+
+.products_sell h1{
+  margin-left: 15%;
+  margin-top: 148px;
+}

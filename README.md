@@ -1,12 +1,11 @@
 # Houstons Rockets
-Site Institucional de Um para Para o time Houston Rockets
-
-Site onepage
+Site de Um fã para o time Houston Rockets
 
 Conteudo:
-  - Sobre 
-  - Time
-  - Texas
-  - Cadastro
+  - HISTORIA 
+  - TIME
+  - LOJA
+  - CADASTRO
+  - LOGIN
 
 Primeiro Projeto Pessoal Orientado BandTec

@@ -475,6 +475,11 @@ width: 95px;
   color: white;
   font-size: 25px;
   font-weight: bold;
+  transition: 0.5s;
+}
+
+.comprar:hover{
+  background-color: #de1326;
 }
 
 .preco img{

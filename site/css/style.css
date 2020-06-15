@@ -6,14 +6,14 @@ body{
   }
   
   .container {
-    max-width: 980px;
+    max-width: 100%;
     margin: 0 auto;
     height: 100%;
   }
 
   .header img{
     width: 120px;
-    margin-left: 405px;
+    margin-left: 45%;
     margin-top: 3px;
   }
   
@@ -175,6 +175,46 @@ body{
   margin-top: -80px;  
   /* Deixando a imagem 40px fora do div card */
 }
+
+.sobre_mim{
+  background-color: black;
+  color: white;
+  float: left;
+  width: 100%;
+}
+
+.sobre_mim h1{
+  color: rgb(191, 32, 47);
+}
+
+.esquerda{
+  width: 40%;
+  height: 400px;
+  margin-right: 10px;
+  float: left;
+  padding: 50px;
+}
+
+.esquerda p{
+ font-size: 20px;
+}
+
+.direita{
+  width: 40%;
+  float: right;
+  padding: 50px;
+  height: 400px;
+}
+
+.direita p{
+  font-size: 20px;
+}
+
+.imagem_sobre_mim{
+  width: 100%;
+  height: 100%;
+}
+
 
 footer{
   float: left;

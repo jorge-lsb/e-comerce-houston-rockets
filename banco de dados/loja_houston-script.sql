@@ -9,3 +9,4 @@ cep_usuario varchar(10) not null
 
 select * from usuario;
 
+insert into usuario values(null,'josé','14789','jose.lucas@bandtec.com.br','43627701860','09330402');

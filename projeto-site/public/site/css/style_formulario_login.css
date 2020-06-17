@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .background_cadastro{
+      background-image: url("../img/backgroung_gif.gif");
+      width: 100%;
+      height: 100vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      float: left;
+  }
+
+  .fundo-transparente{
+    background-color: rgba(0,0,0,0.8321);
+    width: 100%;
+    height: 100vh;
+  }
+
+  form img{
+    height: 100px;
+    width: 100px;
+    float: right;
+}
+  .formulario_cadastro{
+    width: 500px;
+    height: 390px;
+    background-color: rgba(189,190,192,0.8321);
+    float: left;
+    border-radius: 15px;
+    margin-top: 120px;
+    margin-left: 410px;
+  }
+  .formulario_cadastro button{
+    width: 200px;
+    height: 25px;
+    color: rgb(211, 30, 48);
+    background-color: grey;
+    text-shadow: rgb(0, 0, 0) 10px 0 10px;
+    border: 0px;
+    margin-top: 35px;
+    margin-left: 163px;
+  }
+  .cabecalho_form{
+      background-color: rgb(211, 30, 48);
+      padding: 15px;
+      border-bottom:rgb(253, 122, 0) 2px solid;
+      border-radius: 15px 15px 0px 0px;
+  }
+  .cabecalho_form h4{
+    margin: 0px;
+    color: white;
+    text-shadow: rgb(0, 0, 0) 10px 0 10px;
+}
+.cabecalho_form p{
+    margin: 0px;
+    color: white;
+    font-size: 8pt;
+    text-shadow: rgb(0, 0, 0) 10px 0 10px;
+}
+
+  .conteudo_form{
+      padding: 15px;
+  }
+  .conteudo_form h4{
+      color: rgb(211, 30, 48);
+      text-shadow: rgb(0, 0, 0) 10px 0 10px;
+      margin: 0 ;
+  }
+  .conteudo_form p{
+    color: white;
+    text-shadow: rgb(0, 0, 0) 10px 0 10px;
+    margin: 0 ;
+}
+.conteudo_form input{
+    outline: rgb(253, 0, 0);
+    width: 60%;
+    height: 25px;
+    border-radius: 5px;
+    border-left: 3px black solid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+}
+.conteudo_form span{
+    margin-left: 130px;
+}
+.conteudo_form .password_config{
+    margin: 0px;
+}
+.conteudo_form   #ipt_senha_1{
+        width: 60%;
+}
+
+.fa-eye-slash{
+    font-size: 10px;
+    margin: 0;
+}
+.fa-eye{
+ font-size: 10px;
+ margin: 0;
+}
+.conteudo_form .prefixo{
+    width: 30%;
+}
+.conteudo_form .sufixo{
+    width: 15%;
+}
+.conteudo_form button{
+    width: 200px;
+    height: 25px;
+    color: rgb(211, 30, 48);
+    background-color: grey;
+    text-shadow: rgb(0, 0, 0) 10px 0 10px;
+    border: 0px;
+    margin-top: 35px;
+    margin-left: 148px;
+}

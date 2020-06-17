@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Loja</title>
+    <link rel="stylesheet" href="../css/style_formulario_cadastro.css" />
+    <link rel="shortcut icon" href="../img/houston-rockets-logo-p-vermelha.png" type="image/x-icon">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/4b59cf2ce9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- FUNDO DO SITE -->
+    <div class="background_cadastro">
+        <!-- OPACIDADE DO FUNDO -->
+        <div class="fundo-transparente">
+            <!-- FORMULARIO -->
+            <div class="formulario_cadastro">
+
+                <form action="." id="registration_form">
+
+                    <img src="../img/logo-houston rockets-p-branca.png" alt="">
+                    <!-- CABEÇALHO DO CADASTRO -->
+                    <div class="cabecalho_form">
+
+                        <h4>Ainda não é cadastrado no site?</h4>
+                        <p>Faça agora mesmo o seu cadastro, é simples e rápido!</p>
+
+                    </div>
+                    <!-- FIM DO CABEÇALHO -->
+
+                    <!-- CONTEUDO DO FORMULARIO -->
+                    <div class="conteudo_form">
+
+                        <p>Todos os campos são de preenchimento obrigatório.</p>
+                        <h4>Dados Cadastrais</h4>
+
+                        <label>
+
+                            E-mail
+                            <br>
+                            <input type="text" required id="email">
+
+                        </label>
+
+                        <br>
+
+                        <label>
+
+                            Crie sua senha <span>Confirme sua senha</span>
+                            <br>
+
+                            <input id="ipt_senha_1" type="password" required>
+
+                            <span class="password_config" id="show_password1">
+
+                                <i onclick="mostrar1()" class="fa fa-eye-slash" aria-hidden="true"></i>
+
+                            </span>
+
+
+                            <input id="ipt_senha_2" type="password" required>
+
+                            <span class="password_config" id="show_password2">
+
+                                <i onclick="mostrar2()" class="fa fa-eye-slash" aria-hidden="true"></i>
+
+                            </span>
+
+                        </label>
+
+                        <br>
+
+                        <label>
+
+                            CPF
+                            <br>
+                            <input onkeyup="texting()" id="cpf" type="text"name="cpf" maxlength="11" onblur="return verificarCPF(this.value)" required></label>
+                        <br>
+
+                        <label>
+
+                            Cep
+                            <br>
+                            <input id="id_prefix" onkeyup="textingprefix()" class="prefixo" type="text" required>-
+                            <input id="id_sufix" onkeyup="textingprefixreverse()" class="sufixo" type="text" required>
+
+                        </label>
+
+                        <br>
+
+                        <button id="btn_register" type="submit" onclick="validating_form()"><i
+                                class="fa fa-long-arrow-right" aria-hidden="true"></i>Cadastrar</button>
+                    </div>
+                    <!-- FIM DO CONTEUDO -->
+                </form>
+
+                <a href="../../index.html">
+                    <button><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Voltar</button>
+                </a>
+
+            </div>
+            <!-- FIM DO FORMULARIO -->
+        </div>
+        <!-- FIM OPACIDADE DO FUNDO -->
+    </div>
+    <!-- FIM DO FUNDO -->
+</body>
+
+</html>
+<script src="../js/validacao_cadastro.js"></script>
+<script src="../js/cpf.js"></script>

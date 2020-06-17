@@ -1,0 +1,243 @@
+body{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    height: 100%;
+  }
+
+  .header img{
+    width: 120px;
+    margin-left: 45%;
+    margin-top: 3px;
+  }
+  
+  .header { 
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background: rgb(191, 32, 47);
+
+  }
+  .nav {
+    float: right;
+    text-transform: uppercase;
+  }
+  
+  .nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+    color: white;
+    font-weight: bold;
+  }
+  .nav ul :hover{
+    color: black;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .nav .ativo{
+    color: rgb(0, 89, 255);
+  
+  }
+  
+  .nav ul {
+    margin: 18px auto;
+    padding: 22px;
+  }
+  
+  .titulo {
+    float: left;
+    color: white;
+    margin: auto;
+    padding: 12px;
+  }
+
+  .historia{
+    background-color:rgb(189, 190, 192);
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .historia img{
+    height: 400px;
+    margin-left: 0px;
+    margin-top: 150px;
+    float: left;
+  }
+
+  .conteudo{
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.93214);
+    float: left;
+    color: white;
+    width: 600px;
+    padding: 30px;
+    margin-top:150px;
+    margin-left: 50px;
+    border-bottom: 10px rgb(191, 32, 47) solid;
+  }
+
+  .conteudo p{
+    text-align: justify;
+  }
+
+  .showcase{
+    text-align: center;
+    background-image: url("../img/toyota-center-dentro-wallpaper2.jpg") ;
+    min-height: 67vh;
+    width: 100%;
+    color: white;
+  }
+  .fundo-transparente{
+    background-color: rgba(0,0,0,0.7);
+    min-height: 67vh;
+
+  }
+
+ .img_harden{
+    float: right;
+    margin: 116px 0px 150px 15px;
+    width: 150px;
+  }
+
+  .showcase h1{
+    margin: 0;
+    padding-top: 80px;
+    font-size: 55px;
+  }
+  
+  .showcase p {
+    padding-top: 150px;
+    font-size: 20px;
+    margin: 0px;
+    float: left;
+    width: 700px;
+  }
+  
+  .showcase span{
+    color: rgba(255,0,0,1);
+  }
+
+  .novidades {
+    width: 100%;
+    height: 100px;
+    background: rgb(38,38,38);
+}
+
+.time{
+  width: 100%;
+  float: left;
+  margin-top: -22px;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,0,0,1) 50%, rgba(0,0,0,1) 100%);
+}
+
+.time h1{
+  padding: 30px;
+  text-align: center;
+  color: #000;
+  
+}
+
+.card{
+  float: left;
+  margin: 80px 0 20px 35px;
+  text-align: center;
+  width: 400px;
+  height: 250px;
+  background-color: #000;
+  border-radius:  0 30px;
+  border-bottom: 10px rgb(191, 32, 47) solid;
+  border-right: 10px rgb(191, 32, 47) solid;
+  /* Transformando elementos da pagia em figuras com curvas */
+}
+
+.card h2{
+  text-align: center;
+  color: #fff; 
+}
+.card p{
+  text-align: center;
+  color: #fff; 
+}
+
+.card .foto{
+  width: 260px;
+  height: 190px;
+  margin-top: -80px;  
+  /* Deixando a imagem 40px fora do div card */
+}
+
+.sobre_mim{
+  background-color: black;
+  color: white;
+  float: left;
+  width: 100%;
+}
+
+.sobre_mim h1{
+  color: rgb(191, 32, 47);
+}
+
+.esquerda{
+  width: 40%;
+  height: 400px;
+  margin-right: 10px;
+  float: left;
+  padding: 50px;
+}
+
+.esquerda p{
+ font-size: 20px;
+}
+
+.direita{
+  width: 40%;
+  float: right;
+  padding: 50px;
+  height: 400px;
+}
+
+.direita p{
+  font-size: 20px;
+}
+
+.imagem_sobre_mim{
+  width: 100%;
+  height: 100%;
+}
+
+
+footer{
+  float: left;
+  width: 100%;
+  height: 200px;
+  color: white;
+}
+
+footer img{
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+
+.conteudo_rodape{
+  padding: 25px;
+  text-shadow: rgb(0, 0, 0) 10px 0 10px;
+  background-color: #bdbec0;
+  text-align: center;
+}
+
+.conteudo_rodape  a{
+  color: white;
+  list-style: none;
+  margin-left: 15px;
+}

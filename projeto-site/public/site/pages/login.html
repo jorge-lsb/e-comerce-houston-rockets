@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Loja</title>
+    <link rel="stylesheet" href="../css/style_formulario_login.css" />
+    <link rel="shortcut icon" href="../img/houston-rockets-logo-p-vermelha.png" type="image/x-icon">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<body>
+
+    <!-- FUNDO DO SITE -->
+    <div class="background_cadastro">
+        <!-- OPACIDADE DO FUNDO -->
+        <div class="fundo-transparente">
+            <!-- FORMULARIO -->
+            <div class="formulario_cadastro">
+                <form id="form_login" method="post" onsubmit="return entrar()">
+                    <img src="../img/logo-houston rockets-p-branca.png" alt="">
+                    <!-- CABEÇALHO DO CADASTRO -->
+                    <div class="cabecalho_form">
+                        <h4>Ja fez o seu cadastro no site?</h4>
+                        <p>Faça agora mesmo o seu login, é simples e rápido!</p>
+                    </div>
+                    <!-- FIM DO CABEÇALHO -->
+                    <!-- CONTEUDO DO FORMULARIO -->
+                    <div class="conteudo_form">
+                        <p>Todos os campos são de preenchimento obrigatório.</p>
+                        <h4>Dados de Login</h4>
+                        <label>
+                            E-mail
+                            <br>
+                        </label>
+                        <input type="text" name="login" required>
+                        <br>
+                        <label>
+                            Digite sua senha
+                            <br>
+                        </label>
+                        <input id="ipt_senha_1" type="password" name="senha" required>
+                        <span class="password_config" id="show_password1">
+                            <i onclick="mostrar1a()" class="fa fa-eye-slash" aria-hidden="true"></i>
+                        </span>
+                        <button id="btn_entrar" type="submit"><i class="fa fa-long-arrow-right"
+                                aria-hidden="true"></i>Logar</button>
+
+                        <a href="../../index.html">
+                            <button><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Voltar</button>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="../js/validacao_cadastro.js"></script>
+<script>
+
+    function entrar() {
+        aguardar();
+        var formulario = new URLSearchParams(new FormData(form_login));
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    sessionStorage.login_usuario_meuapp = json.email_usuario;
+                    sessionStorage.nome_usuario_meuapp = json.senha_usuario;
+
+                    window.location.href = 'loja.html';
+
+                });
+
+            } else {
+
+                console.log('Erro de login!');
+
+                response.text().then(texto => {
+                    console.error(texto);
+                    finalizar_aguardar(texto);
+                });
+            }
+        });
+
+        return false;
+    }
+
+    function aguardar() {
+        btn_entrar.disabled = true;
+        img_aguarde.style.display = 'block';
+        div_erro.style.display = 'none';
+    }
+
+    function finalizar_aguardar(resposta) {
+        btn_entrar.disabled = false;
+        img_aguarde.style.display = 'none';
+        div_erro.style.display = 'block';
+        div_erro.innerHTML = resposta;
+    }
+
+</script>

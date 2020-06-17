@@ -61,6 +61,7 @@
 <script>
 
     function entrar() {
+        debugger;
         // aguardar();
         var formulario = new URLSearchParams(new FormData(form_login));
         fetch("/usuarios/autenticar", {
@@ -73,7 +74,7 @@
                 resposta.json().then(json => {
 
                     sessionStorage.login_usuario_meuapp = json.email_usuario;
-                    sessionStorage.nome_usuario_meuapp = json.senha_usuario;
+                    sessionStorage.nome_usuario_meuapp = json.nome_usuario;
 
                     window.location.href = 'loja.html';
 

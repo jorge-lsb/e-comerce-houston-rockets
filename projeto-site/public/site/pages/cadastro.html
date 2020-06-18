@@ -20,7 +20,7 @@
             <!-- FORMULARIO -->
             <div class="formulario_cadastro">
 
-                <form action="." id="form_cadastro" method="post" onsubmit="return cadastrar()">
+                <form action="." id="form_cadastro" method="post">
 
                     <img src="../img/logo-houston rockets-p-branca.png" alt="">
                     <!-- CABEÇALHO DO CADASTRO -->
@@ -53,9 +53,9 @@
                             Crie sua senha <span>Confirme sua senha</span>
                             <br>
 
-                            <input id="ipt_senha_1" type="password" required>
+                            <input name="senha" id="ipt_senha_1" type="password" required>
 
-                            <span name="senha" class="password_config" id="show_password1">
+                            <span  class="password_config" id="show_password1">
 
                                 <i onclick="mostrar1()" class="fa fa-eye-slash" aria-hidden="true"></i>
 
@@ -75,11 +75,11 @@
                         <br>
 
                         <label>
-
+                            <!-- onkeyup="texting()" 
+                            onblur="return verificarCPF(this.value)" -->
                             CPF
                             <br>
-                            <input onkeyup="texting()" id="cpf" type="text" name="cpf" maxlength="11"
-                                onblur="return verificarCPF(this.value)" required></label>
+                            <input id="cpf" type="text" name="cpf" maxlength="11"required></label>
                         <br>
 
                         <label> NOME

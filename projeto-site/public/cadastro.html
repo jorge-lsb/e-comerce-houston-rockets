@@ -18,6 +18,9 @@
         <br>
         Senha: <input type="password" name="senha" required minlength="4">
         <br>
+        cpf:
+        <input type="text" name="cpf">
+        <br>
         <button id="btn_entrar">Cadastrar</button>
     </form>
     
@@ -28,11 +31,12 @@
     </div>
 
 </body>
-
+    
 </html>
 <script>
 
     function cadastrar() {
+       
         aguardar();
         var formulario = new URLSearchParams(new FormData(form_cadastro));
         fetch("/usuarios/cadastrar", {

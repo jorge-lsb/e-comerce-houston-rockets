@@ -1,31 +1,4 @@
-function validating_form() {
-    // VALIDADANDO E-MAIL
 
-    var email_validating = document.getElementById("email").value;
-    var validated_email_successfully = (email_validating.indexOf('@') > -1 && email_validating.indexOf('.') && email_validating.length >= 7);
-
-    if (!validated_email_successfully) {
-        console.log('SEU E-MAIL NÃO É VALIDO');
-        alert('SEU EMAIL NÃO É VALIDO');
-        document.getElementById("registration_form").action = "";
-    }
-    
-    // VALIDADANDO SENHA
-
-    var passoword = document.getElementById("ipt_senha_1").value;
-    var passoword_confirm = document.getElementById("ipt_senha_2").value;
-    var confirmed = passoword == passoword_confirm;
-
-    if (!confirmed) {
-        alert("A senhas não conferem!");
-        document.getElementById("registration_form").action = "";
-    }
-
-    if(validated_email_successfully && confirmed){
-        document.getElementById("registration_form").action = "./loja.html";
-    }
-
-}
 
 function validating_form_login() {
     // VALIDADANDO E-MAIL
@@ -36,7 +9,7 @@ function validating_form_login() {
     if (!validated_email_successfully) {
         console.log('SEU E-MAIL NÃO É VALIDO');
         alert('SEU EMAIL NÃO É VALIDO');
-        document.getElementById("registration_form").action = "";
+        document.getElementById("form_cadastro").action = "";
     }
     
     // VALIDADANDO SENHA
@@ -46,15 +19,15 @@ function validating_form_login() {
 
     // if (!confirmed) {
     //     alert("A senhas não conferem!");
-    //     document.getElementById("registration_form").action = "";
+    //     document.getElementById("form_cadastro").action = "";
     // }
 
     // if(validated_email_successfully && confirmed){
-    //     document.getElementById("registration_form").action = "./loja.html";
+    //     document.getElementById("form_cadastro").action = "./loja.html";
     // }
 
     if(validated_email_successfully){
-        document.getElementById("registration_form").action = "./loja.html";
+        document.getElementById("form_cadastro").action = "./loja.html";
     }
 
 }

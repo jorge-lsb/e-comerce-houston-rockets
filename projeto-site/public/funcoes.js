@@ -6,7 +6,7 @@ function redirecionar_login() {
 }
 
 function verificar_autenticacao() {
-    debugger;
+
     login_usuario = sessionStorage.login_usuario_meuapp;
     nome_usuario = sessionStorage.nome_usuario_meuapp;
     
@@ -26,7 +26,7 @@ function logoff() {
 }
 
 function validar_sessao() {
-    debugger;
+
     fetch(`/usuarios/sessao/${login_usuario}`, {cache:'no-store'})
     .then(resposta => {
         if (resposta.ok) {

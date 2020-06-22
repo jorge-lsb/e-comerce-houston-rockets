@@ -55,7 +55,7 @@
 
                             <input name="senha" id="ipt_senha_1" type="password" required>
 
-                            <span  class="password_config" id="show_password1">
+                            <span class="password_config" id="show_password1">
 
                                 <i onclick="mostrar1()" class="fa fa-eye-slash" aria-hidden="true"></i>
 
@@ -79,7 +79,7 @@
                             onblur="return verificarCPF(this.value)" -->
                             CPF
                             <br>
-                            <input id="cpf" type="text" name="cpf" maxlength="11"required></label>
+                            <input id="cpf" type="text" name="cpf" maxlength="11" required></label>
                         <br>
 
                         <label> NOME
@@ -93,7 +93,7 @@
 
                         <br>
 
-                        <button id="btn_entrar" type="submit" onclick="validating_form()"><i
+                        <button id="btn_entrar" type="submit" onclick="return validating_form()"><i
                                 class="fa fa-long-arrow-right" aria-hidden="true"></i>Cadastrar</button>
                     </div>
                     <!-- FIM DO CONTEUDO -->
@@ -116,61 +116,61 @@
 <script src="../js/cpf.js"></script>
 <script>
     function validating_form() {
-    // VALIDADANDO E-MAIL
+        // VALIDADANDO E-MAIL
 
-    var email_validating = document.getElementById("email").value;
-    var validated_email_successfully = (email_validating.indexOf('@') > -1 && email_validating.indexOf('.') && email_validating.length >= 7);
+        var email_validating = document.getElementById("email").value;
+        var validated_email_successfully = (email_validating.indexOf('@') > -1 && email_validating.indexOf('.') && email_validating.length >= 7);
 
-    if (!validated_email_successfully) {
-        console.log('SEU E-MAIL NÃO É VALIDO');
-        alert('SEU EMAIL NÃO É VALIDO');
-        document.getElementById("form_cadastro").action = "";
+        if (!validated_email_successfully) {
+            console.log('SEU E-MAIL NÃO É VALIDO');
+            alert('SEU EMAIL NÃO É VALIDO');
+            document.getElementById("form_cadastro").action = "";
+        }
+
+        // VALIDADANDO SENHA
+
+        var passoword = document.getElementById("ipt_senha_1").value;
+        var passoword_confirm = document.getElementById("ipt_senha_2").value;
+        var confirmed = passoword == passoword_confirm;
+
+        if (!confirmed) {
+            alert("A senhas não conferem!");
+            document.getElementById("form_cadastro").action = "";
+        }
+
+        if (validated_email_successfully && confirmed) {
+            
+            var formulario = new URLSearchParams(new FormData(form_cadastro));
+            fetch("/usuarios/cadastrar", {
+                method: "POST",
+                body: formulario
+            }).then(function (response) {
+
+                if (response.ok) {
+
+                    window.location.href = 'login.html';
+
+                } else {
+
+                    alert('Erro de cadastro!');
+                    response.text().then(function (resposta) {
+                        alert(resposta);
+                    });
+
+                }
+            });
+
+            return false;
+        }
+
     }
-    
-    // VALIDADANDO SENHA
-
-    var passoword = document.getElementById("ipt_senha_1").value;
-    var passoword_confirm = document.getElementById("ipt_senha_2").value;
-    var confirmed = passoword == passoword_confirm;
-
-    if (!confirmed) {
-        alert("A senhas não conferem!");
-        document.getElementById("form_cadastro").action = "";
-    }
-
-    if(validated_email_successfully && confirmed){
-        // document.getElementById("form_cadastro").action = "./loja.html";
-        cadastrar();
-    }
-
-}
 </script>
-<script>
+<!-- <script>
     function cadastrar() {
         
-        var formulario = new URLSearchParams(new FormData(form_cadastro));
-        fetch("/usuarios/cadastrar", {
-            method: "POST",
-            body: formulario
-        }).then(function (response) {
-            
-            if (response.ok) {
-
-                window.location.href='login.html';
-
-            } else {
-
-                alert('Erro de cadastro!');
-                response.text().then(function (resposta) {
-                    alert(resposta);
-                });
-           
-            }
-        });
-
-        return false;
+        
     }
 
-</script>
+</script> -->
 
 <!-- id="btn_register"  -->

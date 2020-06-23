@@ -53,7 +53,7 @@
                             Crie sua senha <span>Confirme sua senha</span>
                             <br>
 
-                            <input name="senha" id="ipt_senha_1" type="password" required>
+                            <input name="senha" id="ipt_senha_1" type="password" minlength="7" required>
 
                             <span class="password_config" id="show_password1">
 
@@ -62,7 +62,7 @@
                             </span>
 
 
-                            <input id="ipt_senha_2" type="password" required>
+                            <input id="ipt_senha_2" type="password" minlength="7" required>
 
                             <span class="password_config" id="show_password2">
 
@@ -124,44 +124,49 @@
         if (!validated_email_successfully) {
             console.log('SEU E-MAIL NÃO É VALIDO');
             alert('SEU EMAIL NÃO É VALIDO');
-            document.getElementById("form_cadastro").action = "";
         }
-
         // VALIDADANDO SENHA
+
 
         var passoword = document.getElementById("ipt_senha_1").value;
         var passoword_confirm = document.getElementById("ipt_senha_2").value;
         var confirmed = passoword == passoword_confirm;
 
-        if (!confirmed) {
-            alert("A senhas não conferem!");
-            document.getElementById("form_cadastro").action = "";
+        if (passoword.trim() == '' || passoword_confirm.trim() == '') {
+            alert('espaço da senha está vazia')
+        } else {
+            if (!confirmed) {
+                alert("A senhas não conferem!");
+
+            }
+
+            if (validated_email_successfully && confirmed) {
+
+                var formulario = new URLSearchParams(new FormData(form_cadastro));
+                fetch("/usuarios/cadastrar", {
+                    method: "POST",
+                    body: formulario
+                }).then(function (response) {
+
+                    if (response.ok) {
+
+                        window.location.href = 'login.html';
+
+                    } else {
+
+                        alert('Erro de cadastro!');
+                        response.text().then(function (resposta) {
+                            alert(resposta);
+                        });
+
+                    }
+                });
+
+                return false;
+            }
+
         }
 
-        if (validated_email_successfully && confirmed) {
-            
-            var formulario = new URLSearchParams(new FormData(form_cadastro));
-            fetch("/usuarios/cadastrar", {
-                method: "POST",
-                body: formulario
-            }).then(function (response) {
-
-                if (response.ok) {
-
-                    window.location.href = 'login.html';
-
-                } else {
-
-                    alert('Erro de cadastro!');
-                    response.text().then(function (resposta) {
-                        alert(resposta);
-                    });
-
-                }
-            });
-
-            return false;
-        }
 
     }
 </script>
